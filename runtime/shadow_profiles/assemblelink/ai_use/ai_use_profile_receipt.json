@@ -1,0 +1,12 @@
+{
+    "schema":  "contract_registry.ai_use_profile_receipt.v1",
+    "utc":  "2026-10-13T05:28:41.6278758Z",
+    "repo_name":  "assemblelink",
+    "profile":  "C:\\dev\\assemblelink\\runtime\\shadow_profiles\\assemblelink\\ai_use\\ai_use_profile.json",
+    "profile_sha256":  "8d0630ae37dedf29aeb9927755b2bcc4133bfd1c5978c8dfac6a47d6ad4e2a5f",
+    "report":  "C:\\dev\\assemblelink\\runtime\\shadow_profiles\\assemblelink\\ai_use\\ai_use_profile_report.md",
+    "ai_use_level":  "agent_assisted",
+    "detection_count":  2,
+    "files_scanned":  15960,
+    "scan_truncated":  false
+}

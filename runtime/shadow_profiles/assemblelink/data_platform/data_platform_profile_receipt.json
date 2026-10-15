@@ -1,0 +1,11 @@
+{
+    "schema":  "contract_registry.data_platform_profile_receipt.v1",
+    "utc":  "2026-10-13T05:28:13.5582611Z",
+    "repo_name":  "assemblelink",
+    "profile":  "C:\\dev\\assemblelink\\runtime\\shadow_profiles\\assemblelink\\data_platform\\data_platform_profile.json",
+    "profile_sha256":  "6c8a668a9044457e4e9a814538cfd6d7d287fdd38532b4b0238424005156086e",
+    "report":  "C:\\dev\\assemblelink\\runtime\\shadow_profiles\\assemblelink\\data_platform\\data_platform_profile_report.md",
+    "detection_count":  2,
+    "files_scanned":  15960,
+    "scan_truncated":  false
+}

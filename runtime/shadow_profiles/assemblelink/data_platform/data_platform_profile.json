@@ -1,0 +1,32 @@
+{
+    "schema":  "contract_registry.data_platform_profile.v1",
+    "generated_utc":  "2026-10-13T05:28:13.5285351Z",
+    "repo_name":  "assemblelink",
+    "target_repo":  "C:\\dev\\assemblelink",
+    "files_scanned":  15960,
+    "scan_truncated":  false,
+    "platform_signals":  [
+                             "env_binding"
+                         ],
+    "category_summary":  [
+                             {
+                                 "category":  "configuration",
+                                 "detections":  2
+                             }
+                         ],
+    "detection_count":  2,
+    "detections":  [
+                       {
+                           "category":  "configuration",
+                           "signal":  "env_binding",
+                           "path":  "toolbelt\\inbox\\172e67ce90be19658611b94bcf6c8a7b9e0f94d32cc11fc78716937fab730254\\payload\\repo_snapshot\\repo_root\\.env.example",
+                           "detail":  "SUPABASE_KEY"
+                       },
+                       {
+                           "category":  "configuration",
+                           "signal":  "env_binding",
+                           "path":  "toolbelt\\inbox\\172e67ce90be19658611b94bcf6c8a7b9e0f94d32cc11fc78716937fab730254\\payload\\repo_snapshot\\repo_root\\.env.example",
+                           "detail":  "SUPABASE_URL"
+                       }
+                   ]
+}

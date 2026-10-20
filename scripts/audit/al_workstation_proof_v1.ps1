@@ -1,5 +1,5 @@
 param(
-  [string]$RepoRoot='C:\dev\assemblelink',
+  [string]$RepoRoot=(Split-Path -Parent (Split-Path -Parent $PSScriptRoot)),
   [string]$InstallerPath='',
   [string]$RuntimePath=''
 )

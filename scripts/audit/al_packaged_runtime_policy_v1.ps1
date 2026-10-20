@@ -1,4 +1,4 @@
-param([string]$RepoRoot='C:\dev\assemblelink')
+param([string]$RepoRoot=(Split-Path -Parent (Split-Path -Parent $PSScriptRoot)))
 $ErrorActionPreference='Stop';Set-StrictMode -Version Latest
 $config=Get-Content (Join-Path $RepoRoot 'ui\src-tauri\tauri.conf.json') -Raw|ConvertFrom-Json
 if($config.bundle.PSObject.Properties.Name-contains'resources'){throw 'BULK_RUNTIME_RESOURCES_FORBIDDEN'}

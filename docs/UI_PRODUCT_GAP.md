@@ -1,5 +1,7 @@
 # UI Product Gap
 
+> **Status (2026-10-20): addressed in 0.1.0.** The raw install-queue and winget-ID plumbing now sits behind toolkit cards and a guided setup wizard (plan, approve, install, results, receipts); the advanced view keeps the details. This note is kept for history.
+
 ## Current issue
 
 The UI exposes too much plumbing:

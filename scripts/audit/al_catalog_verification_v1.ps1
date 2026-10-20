@@ -1,4 +1,4 @@
-param([string]$RepoRoot='C:\dev\assemblelink',[switch]$Live,[ValidateRange(5,120)][int]$TimeoutSec=30)
+param([string]$RepoRoot=(Split-Path -Parent (Split-Path -Parent $PSScriptRoot)),[switch]$Live,[ValidateRange(5,120)][int]$TimeoutSec=30)
 $ErrorActionPreference='Stop';Set-StrictMode -Version Latest
 function WriteUtf8([string]$Path,[string]$Text){$dir=Split-Path -Parent $Path;if($dir){New-Item -ItemType Directory -Force -Path $dir|Out-Null};[IO.File]::WriteAllText($Path,$Text,(New-Object Text.UTF8Encoding($false)))}
 function Sha([string]$Path){(Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()}

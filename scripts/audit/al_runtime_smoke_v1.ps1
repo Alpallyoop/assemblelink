@@ -1,4 +1,4 @@
-param([string]$RepoRoot='C:\dev\assemblelink',[string]$RuntimePath='',[ValidateRange(5,30)][int]$WaitSeconds=10)
+param([string]$RepoRoot=(Split-Path -Parent (Split-Path -Parent $PSScriptRoot)),[string]$RuntimePath='',[ValidateRange(5,30)][int]$WaitSeconds=10)
 $ErrorActionPreference='Stop';Set-StrictMode -Version Latest
 function EnsureDir([string]$Path){if(-not(Test-Path -LiteralPath $Path -PathType Container)){New-Item -ItemType Directory -Force -Path $Path|Out-Null}}
 function WriteUtf8([string]$Path,[string]$Text){EnsureDir (Split-Path -Parent $Path);$normalized=$Text.Replace("`r`n","`n").Replace("`r","`n");if(-not$normalized.EndsWith("`n")){$normalized+="`n"};[IO.File]::WriteAllText($Path,$normalized,(New-Object Text.UTF8Encoding($false)))}

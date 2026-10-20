@@ -1,4 +1,4 @@
-param([string]$RepoRoot="C:\dev\assemblelink")
+param([string]$RepoRoot=(Split-Path -Parent (Split-Path -Parent $PSScriptRoot)))
 $ErrorActionPreference="Stop"
 Set-StrictMode -Version Latest
 

@@ -1,4 +1,4 @@
-param([string]$RepoRoot='C:\dev\assemblelink')
+param([string]$RepoRoot=(Split-Path -Parent (Split-Path -Parent $PSScriptRoot)))
 $ErrorActionPreference='Stop'; Set-StrictMode -Version Latest
 $catalog=Get-Content (Join-Path $RepoRoot 'catalog\approved_software_sources.v1.json') -Raw|ConvertFrom-Json
 $toolkits=Get-Content (Join-Path $RepoRoot 'catalog\toolkits.v1.json') -Raw|ConvertFrom-Json
